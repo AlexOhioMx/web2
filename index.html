@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adivina el Pokémon</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-4">Adivina el Pokémon</h1>
+                <div id="output" class="text-center mb-3"></div>
+                <div class="form-group">
+                    <label for="guess">Tu Adivinanza:</label>
+                    <input type="text" id="guess" class="form-control">
+                </div>
+                <p id="rangeText" class="text-muted text-center">El Pokémon está entre los números 1 y 50. Pista: Agua.</p>
+                <div id="score" class="text-center mb-3">Puntuación: <span id="scoreValue">0</span></div>
+                <div id="lives" class="text-center mb-3">Vidas: <span id="livesValue">3</span></div>
+                <button id="submitBtn" class="btn btn-primary">Verificar</button>
+                <button id="resetBtn" class="btn btn-danger ml-2">Reset</button>
+                <audio id="correctSound" src="correct.mp3"></audio>
+                <audio id="incorrectSound" src="incorrect.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
